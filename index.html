@@ -57,15 +57,35 @@
     <!-- Start tamb -->
     <ul class="pepsi-box">
       <li>
-        <img src="/src/img/pepsi001.png" onclick="imgSlider()" alt="Pepsi" />
+        <img
+          src="/src/img/pepsi001.png"
+          onclick="imgSlider('/src/img/pepsi001.png'); changeBgColor('#0062be')"
+          alt="Pepsi"
+        />
       </li>
       <li>
-        <img src="/src/img/pepsi002.png" onclick="imgSlider()" alt="Pepsi" />
+        <img
+          src="/src/img/pepsi002.png"
+          onclick="imgSlider('/src/img/pepsi002.png'); changeBgColor('#e60c2c')"
+          alt="Pepsi"
+        />
       </li>
       <li>
-        <img src="/src/img/pepsi003.png" onclick="imgSlider()" alt="Pepsi" />
+        <img
+          src="/src/img/pepsi003.png"
+          onclick="imgSlider('/src/img/pepsi003.png'); changeBgColor('#1e1e1e')"
+          alt="Pepsi"
+        />
       </li>
     </ul>
-    <script></script>
+    <script>
+      function imgSlider(argument) {
+        document.querySelector(".pepsi").src = argument;
+      }
+      function changeBgColor(color) {
+        const body = document.querySelector("body");
+        body.style.background = color;
+      }
+    </script>
   </body>
 </html>
