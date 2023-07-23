@@ -1,0 +1,91 @@
+@media (max-width:920px){
+    .navbar{
+        padding: 30px 5%;
+    }
+    .container{
+        padding: 0 5%;
+    }
+    .navbar a img{
+        max-width: 60px;
+        position: relative;
+    }
+    .navbar ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 0.2s;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .navbar ul li{
+        margin: 10px 0;
+    }
+    .navbar ul li a{
+        color: #1e1e1e;
+        font-size: 2em;
+        transition: 0.1s;
+    }
+    .navbar ul li a:hover{
+        color: #0062be;
+    }
+    .toggleMenu{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url('/src/img/menu.png') no-repeat;
+        background-size: 30px;
+        background-position: center;
+        z-index: 2;
+
+    }
+    .toggleMenu.active{
+        background: url('/src/img/close.png') no-repeat;
+        background-size: 25px;
+        background-position: center;
+        filter: invert(1);
+        position: fixed;
+        right: 5%;
+    }
+    .navbar .navigation.active{
+        opacity: 1;
+        visibility: visible;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .content{
+        padding-right: 30px;
+        width: 100%;
+    }
+    .container .content h2{
+        font-size: 40px;
+    }
+    .container .content h1{
+        font-size: 80px;
+    }
+    .container .content p{
+        max-width: 80%;
+    }
+    .container .content .btn{
+        margin-bottom: 40px;
+    }
+    .container .image .pepsi{
+        width:200px;
+        margin-right: 0;
+        padding-bottom: 60px;
+    }
+    .pepsi-box{
+        position: relative;
+    }
+    .pepsi-box li img{
+        max-width:40px;
+    }
+}

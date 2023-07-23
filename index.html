@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pepsi Landing Page</title>
     <link rel="stylesheet" href="/src/css/styles.css" />
+    <link rel="stylesheet" href="/src/css/responsive.css" />
     <!-- Boxicons library -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -18,7 +19,9 @@
         <a>
           <img src="/src/img/logo.png" alt="Pepsi Logo" />
         </a>
-        <ul>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+
+        <ul class="navigation">
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">What's New</a></li>
@@ -85,6 +88,12 @@
       function changeBgColor(color) {
         const body = document.querySelector("body");
         body.style.background = color;
+      }
+      function toggleMenu() {
+        const toggleMenu = document.querySelector(".toggleMenu");
+        const navigation = document.querySelector(".navigation");
+        toggleMenu.classList.toggle("active");
+        navigation.classList.toggle("active");
       }
     </script>
   </body>
