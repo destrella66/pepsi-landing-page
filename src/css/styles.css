@@ -177,3 +177,10 @@ body {
 .pepsi-box li:hover {
   transform: translateY(-15px);
 }
+
+/* max-width for ultra wide monitors */
+body,
+.pepsi-box {
+  max-width: 1500px;
+  margin: auto;
+}
